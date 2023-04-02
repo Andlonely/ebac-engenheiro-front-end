@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body > header{
+    background-color: #2f3640;
+    padding: 16px 0;
+    color: #f5f6f5;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container a{
+    
+}
+
+header li {
+    display: inline; /*coloca tudo na mesma linha*/
+    margin-left: 16px;
+    
+}
+
+header li a{
+    color: #f5f6f5;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.articles {
+    display: flex; /*trabalha com flex-box*/
+    flex-wrap: wrap; /*quandoo o espaço acabar em uma linha ele coloca na outra*/
+    justify-content: space-between; /*coloca espaço por igual em todos os itens*/
+}
+
+.articles article img {
+    width: 100%;
+}
+
+.articles article{
+    width: 30%;
+}
+
+section{
+    padding: 16px 0;
+}
+
+section h2, .articles article{
+    margin-bottom: 16px;
+}
+
+.articles article h3{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.articles article a {
+    background-color: blue;
+    color: aliceblue;
+    padding: 8px;
+    display: inline-block; /*os seletores "a" vem pro padrão em inline*/
+    text-decoration: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+.articles article a:hover {
+    text-decoration: underline;
+}
+
+.articles article p,
+.articles article a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.articles article h3{
+    font-size: 24px;
+}
+
+section h2{
+    font-size: 32px;
+}
+
+#esportes{
+    background-color: rgba(0,255,0,0.1);
+}
+
+#esportes .articles article a{
+    background-color: rgba(0,255,0,1)
+}
+
+#economia {
+    background-color: #f8f59f;
+}
+
+#economia .articles article a{
+    background-color: orange;
+}
+
+#entretenimento{
+    background-color: pink;
+}
+
+#entretenimento .articles article a{
+    background-color: cadetblue;
+}
+
+#tec{
+    background-color: blueviolet;
+}
+
+#tec .articles article a{
+    background-color: violet;
+}
