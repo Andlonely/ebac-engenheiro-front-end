@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: darkgoldenrod;
+}
+
+header{
+    background-color: yellow;
+}
+
+#navigation .container {
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+}
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+header li {
+    display: inline;
+    margin-left: 40px;
+    
+}
+
+header li a {
+    color: azure;
+    text-decoration: none;
+}
+
+section .container {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .container {
+    align-items: flex-start;
+}
+
+section .conteudo{
+    margin-left: 40px;
+    font-size: 18px;
+}
+
+section .conteudo h2{
+    padding-bottom: 20px;
+}
+
+.imagens{
+    display: block;
+}
+
+img{
+    width: 600px;
+    padding: 20px;
+}
+
+footer .container {
+    padding: 50px ;
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+footer{
+    background-color: yellow;
+}
+
+footer nav ul li {
+    display: inline;
+    padding-right: 70px;
+}
+
+footer nav ul li a{
+    text-decoration: none;
+}
+
+footer .container p {
+    padding-top:20px;
+}
+
+#contato .container {
+    display: block;
+    padding-bottom: 40px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+
+#contato .container h2 {
+    margin-bottom: 30px;
+}
+
+form input, textarea, button{
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+}
+
+form textarea{
+    resize: none;
+    padding: 30px;
+}
+
+
