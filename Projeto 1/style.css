@@ -121,7 +121,6 @@ img {
 }
 
 footer {
-    display: flex;
     background-color: yellow;
 }
 
@@ -129,7 +128,7 @@ footer .container h2 {
     text-align: center;
 }
 
-.navbarfooter ul {
+.navbarfooter ul  {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -139,12 +138,17 @@ footer .container h2 {
 }
 
 footer .container .direitos {
-    padding-top: 20px;
+    padding: 20px;
 }
 
-#contato .container {
+#contato {
     display: block;
     padding-bottom: 5px;
+}
+
+#contacts{
+    background-color: antiquewhite;
+    padding: 20px;
 }
 
 #contato .container h2 {
@@ -183,5 +187,29 @@ main {
 }
 
 footer {
-    margin-top: auto;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+label{
+    font-size: large;
+}
+
+#contacts{
+    display: block;
+}
+
+#contacts .title{
+    text-align: center;
+}
+
+#contacts .conteudo{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 25px 200px;
+}
+
+#faleconosco{
+    
 }
