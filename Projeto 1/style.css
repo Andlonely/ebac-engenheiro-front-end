@@ -187,7 +187,7 @@ main {
 }
 
 footer {
-    margin-top: 20px;
+    margin-top: auto;
     padding: 20px;
 }
 
@@ -197,6 +197,8 @@ label{
 
 #contacts{
     display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #contacts .title{
