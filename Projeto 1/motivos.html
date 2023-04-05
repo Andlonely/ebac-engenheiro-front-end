@@ -102,18 +102,17 @@
             </nav>
             <p class="direitos">Todos os direitos reservados. 2023</p>
         </div>
-
     </footer>
-</div>
-<script>
-    var inputTelefone = document.getElementById("telefone");
-    inputTelefone.addEventListener("input", function () {
-        var telefone = inputTelefone.value;
-        telefone = telefone.replace(/\D/g, ""); // remove caracteres não numéricos
-        telefone = telefone.replace(/^(\d{2})(\d)/g, "($1) $2"); // adiciona o parêntese e espaço após o código de área
-        inputTelefone.value = telefone;
-    });
-</script>
+    </div>
+    <script>
+        var inputTelefone = document.getElementById("telefone");
+        inputTelefone.addEventListener("input", function () {
+            var telefone = inputTelefone.value;
+            telefone = telefone.replace(/\D/g, ""); // remove caracteres não numéricos
+            telefone = telefone.replace(/^(\d{2})(\d)/g, "($1) $2"); // adiciona o parêntese e espaço após o código de área
+            inputTelefone.value = telefone;
+        });
+    </script>
 </body>
 
 </html>
