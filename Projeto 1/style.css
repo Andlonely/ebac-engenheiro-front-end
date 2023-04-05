@@ -7,33 +7,87 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body{
-    background-color: darkgoldenrod;
+
+
+ul {
+    list-style-type: none;
 }
 
-header{
+a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+#sobre .container .conteudo ol {
+    padding-bottom: 50px;
+}
+
+.button,
+button {
+    border-top: 1px solid #000000;
+    background: #d2d665;
+    background: -webkit-gradient(linear, left top, left bottom, from(#e1ff00), to(#d2d665));
+    background: -webkit-linear-gradient(top, #e1ff00, #d2d665);
+    background: -moz-linear-gradient(top, #e1ff00, #d2d665);
+    background: -ms-linear-gradient(top, #e1ff00, #d2d665);
+    background: -o-linear-gradient(top, #e1ff00, #d2d665);
+    padding: 5px 10px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    -moz-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
+    color: #000000;
+    font-size: 14px;
+    font-family: Georgia, Serif;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.button:hover,
+button:hover {
+    border-top-color: #000000;
+    background: #000000;
+    color: #eeff00;
+}
+
+.button:active,
+button:active {
+    border-top-color: #ffffff;
+    background: #ffffff;
+}
+
+header {
     background-color: yellow;
+    color: #000000;
+}
+
+header h1 {
+    color: #000000;
 }
 
 #navigation .container {
-    padding: 40px 100px;
+    padding: 20px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: aliceblue;
 }
 
-.container{
+.container {
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
-    
+
 }
 
 header li {
     display: inline;
     margin-left: 40px;
-    
+
 }
 
 header li a {
@@ -47,74 +101,86 @@ section .container {
     align-items: center;
     justify-content: space-between;
 }
-
-section .container {
-    align-items: flex-start;
-}
-
-section .conteudo{
+section .conteudo {
     margin-left: 40px;
     font-size: 18px;
 }
 
-section .conteudo h2{
+section .conteudo h2 {
     padding-bottom: 20px;
 }
 
-.imagens{
+.imagens {
     display: block;
 }
 
-img{
+img {
     width: 600px;
     padding: 20px;
 }
 
-footer .container {
-    padding: 50px ;
-    display: block;
-    align-items: center;
-    text-align: center;
-}
-
-footer{
+footer {
+    display: flex;
     background-color: yellow;
 }
 
-footer nav ul li {
-    display: inline;
+footer .container h2 {
+    text-align: center;
+}
+
+.navbarfooter ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding-right: 70px;
-}
-
-footer nav ul li a{
     text-decoration: none;
+    margin-bottom: 16px;
 }
 
-footer .container p {
-    padding-top:20px;
+footer .container .direitos {
+    padding-top: 20px;
 }
 
 #contato .container {
     display: block;
-    padding-bottom: 40px;
-    margin-bottom: 10px;
-    margin-left: 40px;
+    padding-bottom: 5px;
 }
 
 #contato .container h2 {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
-form input, textarea, button{
+form input,
+textarea,
+button,
+label {
     display: block;
     padding: 10px;
     margin-bottom: 10px;
-    
 }
 
-form textarea{
+form textarea {
     resize: none;
-    padding: 30px;
+    width: 300px;
+    height: 100px;
 }
 
+p.direitos {
+    text-align: center;
+}
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+    margin-bottom: 100px;
+    /* ajuste essa margem de acordo com a altura do seu footer */
+}
+
+footer {
+    margin-top: auto;
+}
