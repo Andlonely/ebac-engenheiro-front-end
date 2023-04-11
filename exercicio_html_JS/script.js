@@ -7,8 +7,8 @@ const form = document.querySelector("#form");
 form.addEventListener("submit", (event) => {
     event.preventDefault()
 
-    const valorCampoA = parseInt(campoA.value);
-    const valorCampoB = parseInt(campoB.value);
+    const campoA = parseInt(campoA.value);
+    const campoB = parseInt(campoB.value);
     // se o campoB for maior que o campoA, envia o formulário
     if (campoB.value >= campoA.value) {
         alert("Formulario enviado com sucesso");
