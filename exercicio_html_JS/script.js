@@ -9,7 +9,7 @@ form.addEventListener("submit", (event) => {
 
 
     // se o campoB for maior que o campoA, envia o formulário
-    if (campoB.value > campoA.value) {
+    if (campoB.value >= campoA.value) {
         alert("Formulario enviado com sucesso");
     }
     else {
