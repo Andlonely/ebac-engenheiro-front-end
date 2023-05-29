@@ -19,6 +19,9 @@ $(function () {
             telefone: {
                 required: true
             },
+            endereço: {
+                required: true
+            },
         },
         // MUDA A MENSAGEM PADRÃO DE ERRO PARA A MENSAGEM ABAIXO
         messages: {
