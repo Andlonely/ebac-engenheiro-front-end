@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: auto;
+}
+
+.form-campo{
+    margin-bottom: 16px;
+}
+
+.form-campo label{
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo textarea,
+.form-campo input{
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+
+.form-campo textarea{
+    resize: none;
+    height: 120px;
+}
+
+form {
+    max-width: 360px;
+    margin: 50px auto;
+}
+
+form button{
+    max-width: 120px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #119759;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
