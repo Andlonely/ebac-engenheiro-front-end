@@ -16,8 +16,8 @@
     <div class="conteudo1">
         <header id="navigation">
             <div class="container">
-                <a href="https://www.exemplo.com">
-                    <img src="CARLINHOS__1_-removebg-preview.png" alt="logo carlinhos eletricista">                </a>
+                <a href="#">
+                    <img src="CARLINHOS__1_-removebg-preview.png" alt="logo carlinhos eletricista"> </a>
                 <nav>
                     <ul>
                         <li>
@@ -31,6 +31,7 @@
                             <a class="button" href="contato.html" title="Ir para a seção de contato">Contato</a>
                         </li>
                     </ul>
+                    <button class="btn-menu" type="button">Menu</button>
                 </nav>
             </div>
         </header>
@@ -45,7 +46,7 @@
                     </div>
                     <div class="conteudo">
                         <h2>Sobre nós</h2>
-                        <p>
+                        <p class="primeiro-parargrafo">
                             A Carlinhos Eletricista e Acessorista de Autos é uma empresa fundada por Carlinhos, um
                             empreendedor
                             que desde cedo descobriu sua paixão pelo ramo automotivo. Com apenas 17 anos, Carlinhos
@@ -66,6 +67,8 @@
                             dos clientes que buscam soluções rápidas e eficientes para os problemas em seus veículos.
                             <br>
                             <br>
+                        </p>
+                        <p>
                             A empresa oferece serviços de alta qualidade, com profissionais altamente qualificados e
                             equipamentos de última geração. Seu Carlinhos e sua equipe estão sempre atualizados com as
                             mais
@@ -93,15 +96,45 @@
                     </div>
                 </div>
             </section>
-            <div id="contacts" class="container">
-                <div class="title">
-                    <h2>Contato</h2>
+            <section class="servicos-prestados">
+                <h2>Serviços Prestados</h2>
+                <div class="container">
+                    <div class="servico">
+                        <img src="CARLINHOS__1_-removebg-preview.png" alt="">
+                        <h3>Vidros Elétricos</h3>
+                        <p>Valor: R$:500,00</p>
+                        <button>Saiba Mais</button>
+                    </div>
+                    <div class="servico">
+                        <img src="CARLINHOS__1_-removebg-preview.png" alt="">
+                        <h3>Ventilador do Radiador</h3>
+                        <p>Valor: R$:500,00</p>
+                        <button>Saiba Mais</button>
+
+                    </div>
+                    <div class="servico">
+                        <img src="CARLINHOS__1_-removebg-preview.png" alt="">
+                        <h3>Chave de Seta</h3>
+                        <p>Valor: R$:500,00</p>
+                        <button>Saiba Mais</button>
+
+                    </div>
+                    <div class="servico">
+                        <img src="CARLINHOS__1_-removebg-preview.png" alt="">
+                        <h3>Buzina</h3>
+                        <p>Valor: R$:500,00</p>
+                        <button>Saiba Mais</button>
+
+                    </div>
                 </div>
+            </section>
+            <div id="contacts" class="container">
+                <h2>Contato</h2>
                 <div class="conteudo">
                     <section id="contato">
                         <div class="forms">
                             <form>
-                                <label for="tonome">Peça um orçamento</label>
+                                <label for="nome">Peça um orçamento</label>
                                 <input id="nome" maxlength="30" type="text" placeholder="Seu Nome">
                                 <input type="email" maxlength="50" placeholder="Seu Email">
                                 <input type="tel" id="telefone" maxlength="14"
@@ -112,32 +145,38 @@
                         </div>
                     </section>
                     <section id="faleconosco">
-                        <h3>Fale conosco</h3><br>
-                        <p>Rua Visconde de Porto Alegre, 1819 - Praça 14<br><br>Manaus-AM, CEP 69020-130</p><br>
+                        <h3>Fale conosco</h3>
+                        <br>
+                        <p>Rua Visconde de Porto Alegre, 1819 - Praça 14
+                            <br>
+                            <br>
+                            Manaus-AM, CEP 69020-130
+                        </p>
+                        <br>
                         <p>Telefone: (92) 99167-7839</p>
                     </section>
                 </div>
             </div>
         </div>
-        <footer>
-            <div class="navbarfooter">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="index.html" title="Ir para a seção de sobre mim">Sobre nós</a>
-                        </li>
-                        <li>
-                            <a href="motivos.html" title="Ir para a seção de sobre mim">Quando procurar</a>
-                        </li>
-                        <li>
-                            <a href="#contact" title="Ir para a seção de contato">Contato</a>
-                        </li>
-                    </ul>
-                </nav>
-                <p class="direitos">Todos os direitos reservados. 2023</p>
-            </div>
-        </footer>
     </div>
+    <footer>
+        <div class="navbarfooter">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html" title="Ir para a seção de sobre mim">Sobre nós</a>
+                    </li>
+                    <li>
+                        <a href="motivos.html" title="Ir para a seção de sobre mim">Quando procurar</a>
+                    </li>
+                    <li>
+                        <a href="#contact" title="Ir para a seção de contato">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            <p class="direitos">Todos os direitos reservados. 2023</p>
+        </div>
+    </footer>
     <script>
         var inputTelefone = document.getElementById("telefone");
         inputTelefone.addEventListener("input", function () {

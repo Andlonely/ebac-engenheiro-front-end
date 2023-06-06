@@ -7,13 +7,52 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.container {
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+}
+
+header .btn-menu{
+    display: none;
+}
+
+header {
+    background-color: yellow;
+    color: #000000;
+    width: 100%;
+}
+
+header img {
+    width: 50% ;    
+}
 
 
-ul {
+
+header li {
+    display: inline;
+    margin-left: 40px;
+
+}
+
+header li a {
+    color: azure;
+    text-decoration: none;
+}
+
+nav ul {
     list-style-type: none;
 }
 
-a {
+ nav ul li a {
     text-decoration: none;
     color: #000000;
     font-weight: bold;
@@ -60,51 +99,18 @@ button:active {
     background: #ffffff;
 }
 
-header {
-    background-color: yellow;
-    color: #000000;
-}
 
-header img {
-    display: block;
-    width: 200px ;    
-}
 
-#navigation .container {
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: aliceblue;
-}
-
-.container {
-    max-width: 1280px;
-    width: 100%;
-    margin: 0 auto;
-
-}
-
-header li {
-    display: inline;
-    margin-left: 40px;
-
-}
-
-header li a {
-    color: azure;
-    text-decoration: none;
-}
-
-section .container {
+#sobre .container, .servicos-prestados .container  {
     margin-top: 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+
 section .conteudo {
-    margin-left: 40px;
-    font-size: 18px;
+    width: 90%;
 }
 
 section .conteudo h2 {
@@ -180,11 +186,7 @@ body {
     min-height: 100vh;
 }
 
-main {
-    flex-grow: 1;
-    margin-bottom: 100px;
-    /* ajuste essa margem de acordo com a altura do seu footer */
-}
+
 
 footer {
     margin-top: auto;
@@ -192,7 +194,7 @@ footer {
 }
 
 label{
-    font-size: large;
+    font-size: 1.5em;
 }
 
 #contacts{
@@ -201,13 +203,153 @@ label{
     margin-bottom: 20px;
 }
 
-#contacts .title{
+#contacts h2{
     text-align: center;
 }
 
 #contacts .conteudo{
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    padding: 25px 200px;
+    align-items: center;
+    padding: 25px 140px;
+}
+
+.servicos-prestados{
+    margin-top: 30px;
+    width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.servicos-prestados .servico{
+    background-color: #d2d665;
+    border-radius: 20px;
+}
+
+.servicos-prestados .container{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    column-gap: 1%;
+}
+
+.servicos-prestados .servico img{
+    width: 100%;
+}
+
+.servicos-prestados .servico h2{
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid #000000;
+}
+
+.servicos-prestados .servico button{
+    margin: 10% 35%;
+}
+
+@media screen and (max-width: 767px) {    
+
+    .imagens {
+        display: flex;
+        flex-direction: column;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    nav ul{
+        display: none;
+        margin-left: 50px;
+    }
+
+    header .btn-menu{
+        display: block;
+        margin-right: 20px;
+    }
+
+    #sobre .container {
+        display: block;
+    }
+    
+    #sobre img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #sobre .conteudo{
+        margin: 0 auto;
+    }
+
+    .servicos-prestados{
+        margin-top: 30px;
+        width: 367px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .servicos-prestados .servico{
+        background-color: #d2d665;
+        border-radius: 20px;
+    }
+    
+    .servicos-prestados .container{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 2%;
+        width: 50%;
+    }
+    
+    .servicos-prestados .servico img{
+        width: 80%;
+    }
+    
+    .servicos-prestados .servico h2{
+        width: 100%;
+        padding: 0;
+        border-bottom: 1px solid #000000;
+    }
+    
+    .servicos-prestados .servico button{
+        margin: 30px auto;
+}
+
+    section #faleconosco{
+        display: none;
+    }
+
+    #contacts .conteudo{
+        display: block;
+        padding: 25px 200px;
+    }
+
+    #contacts .forms{
+        padding: 0;
+    }
+
+
+    form textarea {
+        resize: none;
+        width: 180px;
+        height: 100px;
+    }
+
+    #contacts{
+        display: none;
+    }
+
+    footer {
+        bottom: 0;
+        background-color: yellow;
+        padding: 20px;
+        margin-top: auto;
+    }
+
+    .conteudo1 {
+        flex: 1;
+        /* Adicione a margem inferior para criar espaço para o footer */
+        margin-bottom: 100px;
+    }
 }
