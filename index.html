@@ -1,41 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR
+">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css
-    ">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Bootstrap - Cards</title>
+    <link rel="stylesheet" href="lib/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_css_bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .card-img-overlay{
+            background-color: rgba(0,0,0,0.7);
+        }
+
+        .text-bg-dark>img{
+            height: 300px;
+        }
+    </style>
 </head>
 
+
 <body>
+    <h1 class="bg-primary text-center">BOOTSTRAP - CARDS</h1>
     <div class="container">
-        <h1>Formulário de cadastro EBAC</h1>
-        <form action="submit" class="needs-validation">
-            <label class="form-label" for="nome">Digite seu Nome:</label>
-            <input class="form-control" type="text" name="nome" id="nome" required>
-            <div class="valid-feedback">Valid.</div>
-            <div class="invalid-feedback">Please fill out this field.</div>
-            <label class="form-label" for="nome">Digite seu email:</label>
-            <input class="form-control" type="text" name="nome" id="email" required>
-            <div class="valid-feedback">Valid.</div>
-            <div class="invalid-feedback">Please fill out this field.</div>
-            <label class="form-label" for="nome">Digite seu telefone:</label>
-            <input class="form-control" type="text" name="nome" id="tel" required>
-            <div class="valid-feedback">Valid.</div>
-            <div class="invalid-feedback">Please fill out this field.</div>
-            <div class="form-check mb-3 termos">
-                <input class="form-check-input" type="checkbox" id="myCheck" name="remember" required>
-                <label class="form-check-label" for="myCheck">Eu aceito os termos propostos.</label>
-                <div class="valid-feedback">Aceito.</div>
-                <div class="invalid-feedback">Aceite este campo para continuar.</div>
+        <div class="row">
+            <div class="col-4">
+                <div class="card text-bg-dark mb-4">
+                    <img src="https://img.freepik.com/fotos-gratis/trabalhador-de-servico-de-carro-muscular-reparando-o-veiculo_146671-19605.jpg" alt="">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Título do Card</h4>
+                        <h5 class="card-subtitle">Subtitulo do card</h5>
+                        <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam officiis aut fuga. Inventore omnis at voluptatum.
+                        </p>
+                        <a href="#" class="btn btn-primary">Botão Link</a>
+                    </div>
+                    <footer class="card footer text-bg-dark">
+                        Postado em <time>23/06/2023 às 15:11</time>
+                    </footer>
+                </div>
             </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
+            <div class="col-4">
+                <div class="card text-bg-dark mb-4">
+                    <img src="https://static.ferramentaskennedy.com.br/storage/assets/conheca-os-5-melhores-equipamentos-para-oficina-mecanica638968dd071ffac046d49d1a2d130507.jpg" alt="">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Título do Card</h4>
+                        <h5 class="card-subtitle">Subtitulo do card</h5>
+                        <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam officiis aut fuga. Inventore omnis at voluptatum. Voluptatem non earum, excepturi eos commodi fugiat vitae iure libero necessitatibus sed perspiciatis exercitationem.
+                        </p>
+                        <a href="#" class="btn btn-primary">Botão Link</a>
+                    </div>
+                    <footer class="card footer">
+                        Postado em <time>23/06/2023 às 15:11</time>
+                    </footer>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-bg-dark mb-4">
+                    <img src="https://img.freepik.com/fotos-gratis/trabalhador-de-servico-de-carro-muscular-reparando-o-veiculo_146671-19605.jpg" alt="">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Título do Card</h4>
+                        <h5 class="card-subtitle">Subtitulo do card</h5>
+                        <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam officiis aut fuga. Inventore omnis at voluptatum.
+                        </p>
+                        <a href="#" class="btn btn-primary">Botão Link</a>
+                    </div>
+                    <footer class="card footer text-bg-dark">
+                        Postado em <time>23/06/2023 às 15:11</time>
+                    </footer>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-bg-dark mb-4">
+                    <img src="https://img.freepik.com/fotos-gratis/trabalhador-de-servico-de-carro-muscular-reparando-o-veiculo_146671-19605.jpg" alt="">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Título do Card</h4>
+                        <h5 class="card-subtitle">Subtitulo do card</h5>
+                        <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam officiis aut fuga. Inventore omnis at voluptatum.
+                        </p>
+                        <a href="#" class="btn btn-primary">Botão Link</a>
+                    </div>
+                    <footer class="card footer text-bg-dark">
+                        Postado em <time>23/06/2023 às 15:11</time>
+                    </footer>
+                </div>
+            </div>
     </div>
+    <script src="lib/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_js_bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
