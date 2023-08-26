@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja do Kokushibo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .custom-card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<header id="cabecalho">
+    <div class="navbar navbar-expand-lg">
+        <h1>Kokushibos's Store</h1>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"> 
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="collapse navbar-collapse justify-content-end" id="menu" >
+            <ul class="nav nav-pills navbar-nav">
+                <li class="nav-items">
+                    <a class="nav-link active" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-items">
+                    <a class="nav-link" href="#produtos">Produtos</a>
+                </li>
+                <li class="nav-items">
+                    <a class="nav-link" href="#promocoes">Promoções</a>
+                </li>
+                <li class="nav-items">
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <button id="btn-checar-email"class="btn btn-warning" type="button">
+            checar emails não lidos
+        </button>
+    </div>
+</header>
+<body>
+
+    <!-- Carousel de imagens -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://i.pinimg.com/564x/0e/b3/93/0eb393265495bff26265c495843c20c6.jpg" class="d-block w-100" alt="Imagem 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.pinimg.com/564x/47/e7/79/47e77983c72a09a2c55a4e58adb3c7f8.jpg" class="d-block w-100" alt="Imagem 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.pinimg.com/564x/cc/3a/bb/cc3abb4a8365a97fcfaf7396e818a6b8.jpg" class="d-block w-100" alt="Imagem 3">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </a>
+    </div>
+
+    <!-- Layout de grid responsivo -->
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Coluna 1 (Desktop: 3 itens por linha, Tablet: 2 itens por linha, Smartphone: 1 item por linha) -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="custom-card">
+                    <h3 class="card">Item 1</h3>
+                    <img src="Screenshot_1.png" class="img-fluid mx-auto" alt="Imagem 1">
+                    <p>Conteúdo do card 1.</p>
+                </div>
+            </div>
+            <!-- Coluna 2 -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="custom-card">
+                    <h3>Item 2</h3>
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_771880-MLB54970770492_042023-O.webp" class="img-fluid mx-auto" alt="Imagem 2">
+                    <p>Conteúdo do card 1.</p>
+                </div>
+            </div>
+            <!-- Coluna 3 -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="custom-card">
+                    <h3>Item 3</h3>
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_983951-MLB54967210925_042023-O.webp" class="img-fluid mx-auto" alt="Imagem 3">
+                    <p>Conteúdo do card 3.</p>
+                </div>
+            </div>
+            <!-- Adicione mais colunas conforme necessário -->
+        </div>
+    </div>
+
+    <!-- Adicione o link para o arquivo JavaScript do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
