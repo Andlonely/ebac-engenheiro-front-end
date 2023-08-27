@@ -6,11 +6,23 @@
     <title>Loja do Kokushibo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        header{
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: white;
+            z-index: 9999;
+        }
         .custom-card {
             border: 1px solid #ccc;
             padding: 10px;
             margin: 10px;
             text-align: center;
+        }
+
+        .carousel-item img {
+            width: 100vw;
+            height: 70vh;
         }
     </style>
 </head>
@@ -37,7 +49,7 @@
             </ul>
         </nav>
         <button id="btn-checar-email"class="btn btn-warning" type="button">
-            checar emails não lidos
+            Caixa de entrada
         </button>
     </div>
 </header>
@@ -47,13 +59,13 @@
     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://i.pinimg.com/564x/0e/b3/93/0eb393265495bff26265c495843c20c6.jpg" class="d-block w-100" alt="Imagem 1">
+                <img src="https://i.pinimg.com/564x/0e/b3/93/0eb393265495bff26265c495843c20c6.jpg" class="d-block " alt="Imagem 1">
             </div>
             <div class="carousel-item">
-                <img src="https://i.pinimg.com/564x/47/e7/79/47e77983c72a09a2c55a4e58adb3c7f8.jpg" class="d-block w-100" alt="Imagem 2">
+                <img src="https://i.pinimg.com/564x/47/e7/79/47e77983c72a09a2c55a4e58adb3c7f8.jpg" class="d-block " alt="Imagem 2">
             </div>
             <div class="carousel-item">
-                <img src="https://i.pinimg.com/564x/cc/3a/bb/cc3abb4a8365a97fcfaf7396e818a6b8.jpg" class="d-block w-100" alt="Imagem 3">
+                <img src="https://i.pinimg.com/564x/cc/3a/bb/cc3abb4a8365a97fcfaf7396e818a6b8.jpg" class="d-block " alt="Imagem 3">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
@@ -71,24 +83,27 @@
         <div class="row">
             <!-- (Desktop: 3 itens por linha, Tablet: 2 itens por linha, Smartphone: 1 item por linha) -->
             <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="custom-card">
-                    <h3 class="card">Item 1</h3>
+                <div class="custom-card w-100 h-90">
+                    <h3 class="card">Camiseta do Kokushibo Mangá</h3>
                     <img src="Screenshot_1.png" class="img-fluid mx-auto" alt="Imagem 1">
-                    <p>Conteúdo do card 1.</p>
+                    <p>R$ 79,90</p>
+                    <button type="button">Comprar agora</button>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="custom-card">
-                    <h3>Item 2</h3>
+                    <h3>Camiseta do Kokushibo<br>Deus da Lua</h3>
                     <img src="https://http2.mlstatic.com/D_NQ_NP_771880-MLB54970770492_042023-O.webp" class="img-fluid mx-auto" alt="Imagem 2">
-                    <p>Conteúdo do card 1.</p>
+                    <p>R$ 79,90.</p>
+                    <button type="button">Comprar agora</button>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="custom-card">
-                    <h3>Item 3</h3>
+                    <h3>Camiseta do Kokushibo<br>Basic</h3>
                     <img src="https://http2.mlstatic.com/D_NQ_NP_983951-MLB54967210925_042023-O.webp" class="img-fluid mx-auto" alt="Imagem 3">
-                    <p>Conteúdo do card 3.</p>
+                    <p>R$ 79,90.</p>
+                    <button type="button">Comprar agora</button>
                 </div>
             </div>
         </div>
