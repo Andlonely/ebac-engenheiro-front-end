@@ -1,0 +1,47 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Bloco Produtos */
+.produtos {
+    max-width: 640px;
+    width: 100%;
+    margin: 56px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1%;
+}
+
+/* Bloco Produto */
+.produto {
+    border: 1px solid #ddd;
+    padding: 16px;
+    text-align: center;
+}
+
+/* Modificador Produto --destaque */
+.produto--destaque {
+    border-color: gold;
+    background-color: #ffff42;
+}
+
+/* Elemento Produto__imagem */
+.produto__imagem {
+    width: 100%;
+    display: block;
+}
+
+/* Elemento Produto__nome */
+.produto__nome {
+    font-size: 1.2em;
+    margin: 8px 0;
+}
+
+/* Elemento Produto__descricao */
+.produto__descricao {
+    color: gray;
+}
