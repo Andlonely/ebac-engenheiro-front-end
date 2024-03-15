@@ -35,3 +35,7 @@ gulp.task('js', compressJS);
 
 // Tarefa padrão (executa todas as tarefas)
 gulp.task('default', gulp.parallel('sass', 'images', 'js'));
+
+exports.watch = function (){
+    gulp.watch('./src/styles/style.scss')
+};

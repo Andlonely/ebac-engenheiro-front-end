@@ -1,14 +1,22 @@
-*{
+$font-stack: (
+    'Gill Sans',
+    'Gill Sans MT',
+    'Calibri',
+    'Trebuchet MS',
+    sans-serif
+);
+
+* {
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: $font-stack;
 }
 
-body{
+body {
     width: 96vw;
     height: 96vh;
-    display: flex; /* Adiciona flex para centralizar verticalmente */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
@@ -19,23 +27,23 @@ form {
     max-width: 400px;
 }
 
-.form-campo{
+.form-campo {
     margin-bottom: 16px;
 }
 
-.form-campo label{
+.form-campo label {
     font-weight: bold;
     display: block;
 }
 
 .form-campo textarea,
-.form-campo input{
+.form-campo input {
     width: 100%;
     display: block;
     padding: 8px;
 }
 
-form button{
+form button {
     max-width: 120px;
 }
 
