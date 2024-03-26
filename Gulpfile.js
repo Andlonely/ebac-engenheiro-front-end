@@ -1,12 +1,18 @@
 const gulp = require('gulp');
-const sass = require('gulp-sass');
-const imagemin = require('gulp-imagemin');
+const sass = require('gulp-sass')(require('sass'));
+const sourcemaps = require('gulp-sourcemaps');
 const uglify = require('gulp-uglify');
+const obfuscate = require('gulp-obfuscate');
+const imagemin = require('gulp-imagemin');
 
 // Compilação do SASS
 function compileSass() {
-    return gulp.src('src/scss/**/*.scss')
-        .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+    return gulp.src('src/styles/**/*.scss')
+        .pipe(sourcemaps.init())
+        .pipe(sass({ 
+            outputStyle: 'compressed'
+        }))
+        .pipe(sourcemaps.write("./maps"))
         .pipe(gulp.dest('dist/css'));
 }
 
@@ -21,21 +27,13 @@ function compressImages() {
 function compressJS() {
     return gulp.src('src/js/**/*.js')
         .pipe(uglify())
+        .pipe(obfuscate())
         .pipe(gulp.dest('dist/js'));
 }
 
-// Tarefa de compilação do SASS
-gulp.task('sass', compileSass);
 
-// Tarefa de compressão de imagens
-gulp.task('images', compressImages);
-
-// Tarefa de compressão de JavaScript
-gulp.task('js', compressJS);
-
-// Tarefa padrão (executa todas as tarefas)
-gulp.task('default', gulp.parallel('sass', 'images', 'js'));
-
-exports.watch = function (){
-    gulp.watch('./src/styles/style.scss')
+exports.default = function (){
+    gulp.watch('./src/styles/*.scss', {ignoreInitial: false}, gulp.series(compileSass));
+    gulp.watch('./src/js/*.js', {ignoreInitial: false}, gulp.series(compressJS));
+    gulp.watch('./src/img/*', {ignoreInitial: false}, gulp.series(compressImages));
 };
