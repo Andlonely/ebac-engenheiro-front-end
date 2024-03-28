@@ -1,11 +1,42 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+        less: {
+            development: {
+                files: {
+                    'dev/styles/main.css': 'src/styles/main.less'
+                }
+            },
+            production: {
+                options: {
+                    compress: true,
+                },
+                files: {
+                    'dist/styles/main.min.css': 'src/styles/main.less'
+                }
+            }
+        },
+        watch: {
+            less: {
+                files:
+                    ['src/styles/**/*.less']
+                ,
+                tasks: ['less:development']
+            },
+            javascript: {
+                files: ['src/scripts/**/*.js']
+            }
+        },
+        uglify: {
+            development: {
+                files: {
+                    "dev/scripts/main.min.js" : "src/scripts/main.js"
+                }
+            }
+        }
     })
-
-    grunt.registerTask('olaGrunt', function() {
-        setTimeout(function() 
-        {console.log("Olá, Grunt")}
-        , 3000)
-    })
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.registerTask('default', ['watch']);
+    grunt.registerTask('build', ['less:production']);
 }
